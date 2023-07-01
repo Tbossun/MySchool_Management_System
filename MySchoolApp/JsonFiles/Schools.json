@@ -1,3 +1,89 @@
-{
-
-}
+[
+  {
+    "SchoolId": 1,
+    "Name": "ABC School",
+    "Address": "123 Main St",
+    "ContactNumber": "9876543210",
+    "Email": "info@abcschool.com",
+    "Teachers": [
+      {
+        "TeacherId": 1,
+        "TeacherName": "John Smith",
+        "Email": "johnsmith@example.com",
+        "PhoneNumber": "1234567890",
+        "SchoolId": 1,
+        "Classes": [
+          {
+            "ClassId": 1,
+            "Name": "Class A",
+            "Year": 2023,
+            "TeacherId": 1
+          }
+        ],
+        "Quizzes": [
+          {
+            "QuizId": 1,
+            "SubjectId": 1,
+            "TopicId": 1,
+            "TeacherId": 1
+          }
+        ]
+      },
+      {
+        "TeacherId": 2,
+        "TeacherName": "Emily Davis",
+        "Email": "emilydavis@example.com",
+        "PhoneNumber": "9876543210",
+        "SchoolId": 1,
+        "Classes": [
+          {
+            "ClassId": 2,
+            "Name": "Class B",
+            "Year": 2023,
+            "TeacherId": 2
+          }
+        ],
+        "Quizzes": [
+          {
+            "QuizId": 2,
+            "SubjectId": 2,
+            "TopicId": 2,
+            "TeacherId": 2
+          }
+        ]
+      }
+    ],
+    "Students": [
+      {
+        "StudentId": 1,
+        "FirstName": "Alice",
+        "LastName": "Johnson",
+        "DateOfBirth": "2005-05-10",
+        "Email": "alicejohnson@example.com",
+        "Password": "password123",
+        "SchoolId": 1,
+        "ClassId": 1
+      },
+      {
+        "StudentId": 2,
+        "FirstName": "Bob",
+        "LastName": "Williams",
+        "DateOfBirth": "2006-07-15",
+        "Email": "bobwilliams@example.com",
+        "Password": "password123",
+        "SchoolId": 1,
+        "ClassId": 1
+      },
+      {
+        "StudentId": 3,
+        "FirstName": "Charlie",
+        "LastName": "Brown",
+        "DateOfBirth": "2005-03-20",
+        "Email": "charliebrown@example.com",
+        "Password": "password123",
+        "SchoolId": 1,
+        "ClassId": 2
+      }
+    ]
+  }
+]

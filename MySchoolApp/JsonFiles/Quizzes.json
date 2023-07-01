@@ -1,3 +1,72 @@
-{
-
-}
+[
+  {
+    "QuizId": 1,
+    "SubjectId": 1,
+    "TopicId": 1,
+    "TeacherId": 1,
+    "Subject": {
+      "SubjectId": 1,
+      "SubjectName": "Mathematics",
+      "Description": "Mathematics subject description"
+    },
+    "Topic": {
+      "TopicId": 1,
+      "TopicName": "Algebra",
+      "Description": "Algebra topic description",
+      "SubjectId": 1,
+      "Subject": {
+        "SubjectId": 1,
+        "SubjectName": "Mathematics",
+        "Description": "Mathematics subject description"
+      },
+      "Quiz": {
+        "QuizId": 1,
+        "SubjectId": 1,
+        "TopicId": 1,
+        "TeacherId": 1
+      }
+    },
+    "Teacher": {
+      "TeacherId": 1,
+      "TeacherName": "John Smith",
+      "Email": "johnsmith@example.com",
+      "PhoneNumber": "1234567890",
+      "SchoolId": 1
+    }
+  },
+  {
+    "QuizId": 2,
+    "SubjectId": 2,
+    "TopicId": 2,
+    "TeacherId": 2,
+    "Subject": {
+      "SubjectId": 2,
+      "SubjectName": "Science",
+      "Description": "Science subject description"
+    },
+    "Topic": {
+      "TopicId": 2,
+      "TopicName": "Biology",
+      "Description": "Biology topic description",
+      "SubjectId": 2,
+      "Subject": {
+        "SubjectId": 2,
+        "SubjectName": "Science",
+        "Description": "Science subject description"
+      },
+      "Quiz": {
+        "QuizId": 2,
+        "SubjectId": 2,
+        "TopicId": 2,
+        "TeacherId": 2
+      }
+    },
+    "Teacher": {
+      "TeacherId": 2,
+      "TeacherName": "Emily Davis",
+      "Email": "emilydavis@example.com",
+      "PhoneNumber": "9876543210",
+      "SchoolId": 1
+    }
+  }
+]
