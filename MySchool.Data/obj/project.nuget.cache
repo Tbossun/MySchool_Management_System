@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qaADYXxWtjSIGN8ZiPPmec+vBDE3fFfGEaPrTOAaOLB0UynjlGO03EVq8Jplg4Ie/3QO+Ov7KvINcy3gvtDboQ==",
+  "dgSpecHash": "Jd24DUhW9iPI9Rzd668prcG0xMoTMlNdnydNFj5IzsL2dorxrPtamo5iVP7XDOTc99Uk8Hj4UyaiB0+20fcY2g==",
   "success": true,
   "projectFilePath": "C:\\Users\\alabi\\Desktop\\My_Personal_Projects\\MySchool\\MySchool.Data\\MySchool.Data.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\alabi\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\alabi\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\alabi\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\alabi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\alabi\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\alabi\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
     "C:\\Users\\alabi\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"

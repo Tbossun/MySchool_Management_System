@@ -11,5 +11,8 @@ namespace MySchool.Models.Entities
     {
         public string RoleId { get; set; }
         public Role Role { get; set; }
+        public string ImageUrl { get; set; }
+        public string Password { get; set; }
+
     }
 }

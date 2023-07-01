@@ -1396,7 +1396,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.19",
           "Microsoft.EntityFrameworkCore": "6.0.19",
-          "MySchool.Models": "1.0.0"
+          "MySchool.Models": "1.0.0",
+          "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
           "bin/placeholder/MySchool.Data.dll": {}
