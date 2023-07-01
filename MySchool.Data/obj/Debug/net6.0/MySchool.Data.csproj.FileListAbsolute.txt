@@ -1,0 +1,15 @@
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Data\bin\Debug\net6.0\MySchool.Data.deps.json
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Data\bin\Debug\net6.0\MySchool.Data.dll
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Data\bin\Debug\net6.0\MySchool.Data.pdb
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Data\bin\Debug\net6.0\MySchool.Models.dll
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Data\bin\Debug\net6.0\MySchool.Models.pdb
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Data\obj\Debug\net6.0\MySchool.Data.csproj.AssemblyReference.cache
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Data\obj\Debug\net6.0\MySchool.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Data\obj\Debug\net6.0\MySchool.Data.AssemblyInfoInputs.cache
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Data\obj\Debug\net6.0\MySchool.Data.AssemblyInfo.cs
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Data\obj\Debug\net6.0\MySchool.Data.csproj.CoreCompileInputs.cache
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Data\obj\Debug\net6.0\MySchool.Data.csproj.CopyComplete
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Data\obj\Debug\net6.0\MySchool.Data.dll
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Data\obj\Debug\net6.0\refint\MySchool.Data.dll
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Data\obj\Debug\net6.0\MySchool.Data.pdb
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Data\obj\Debug\net6.0\ref\MySchool.Data.dll

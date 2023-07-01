@@ -1,0 +1,12 @@
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Models\bin\Debug\net6.0\MySchool.Models.deps.json
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Models\bin\Debug\net6.0\MySchool.Models.dll
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Models\bin\Debug\net6.0\MySchool.Models.pdb
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Models\obj\Debug\net6.0\MySchool.Models.csproj.AssemblyReference.cache
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Models\obj\Debug\net6.0\MySchool.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Models\obj\Debug\net6.0\MySchool.Models.AssemblyInfoInputs.cache
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Models\obj\Debug\net6.0\MySchool.Models.AssemblyInfo.cs
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Models\obj\Debug\net6.0\MySchool.Models.csproj.CoreCompileInputs.cache
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Models\obj\Debug\net6.0\MySchool.Models.dll
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Models\obj\Debug\net6.0\refint\MySchool.Models.dll
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Models\obj\Debug\net6.0\MySchool.Models.pdb
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchool.Models\obj\Debug\net6.0\ref\MySchool.Models.dll
