@@ -1,16 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MySchool.Models.Entities
 {
-    public class Subject
+    public class Subject  
     {
-        public int SubjectId { get; set; }
-        public string SubjectName { get; set; }
+        public int SubjectID { get; set; }
+
+        [Display(Name = "Subject Title")]
+        [StringLength(50, MinimumLength = 3)]
+        public string Title { get; set; }
+
+        [Display(Name = "Subject Description")]
         public string Description { get; set; }
-        public List<Topic> Topics { get; set; } = new List<Topic>();
+
+        [Range(0, 5)]
+        public int Credits { get; set; }
+
+        public int ClassId { get; set; }
+
+        public virtual Class Class { get; set; }
+
+        public int TeacherId { get; set; }
+
+        public Teacher Teacher { get; set; }
+
+        public virtual ICollection<Topic> Topics { get; set; }
+
     }
 }

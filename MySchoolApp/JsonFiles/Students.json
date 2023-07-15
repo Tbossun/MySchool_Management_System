@@ -1,0 +1,32 @@
+[
+  {
+    "ID": 1,
+    "FirstMidName": "John",
+    "LastName": "Doe",
+    "DateOfBirth": "2000-01-01",
+    "Email": "john.doe@example.com",
+    "EnrollmentDate": "2021-09-01",
+    "SchoolId": 1,
+    "ClassId":  2
+  },
+  {
+    "ID": 2,
+    "FirstMidName": "Jane",
+    "LastName": "Smith",
+    "DateOfBirth": "2001-02-02",
+    "Email": "jane.smith@example.com",
+    "EnrollmentDate": "2021-09-01",
+    "SchoolId": 1,
+    "ClassId":  1
+  },
+  {
+    "ID": 3,
+    "FirstMidName": "Bob",
+    "LastName": "Johnson",
+    "DateOfBirth": "2002-03-03",
+    "Email": "bob.johnson@example.com",
+    "EnrollmentDate": "2021-09-01",
+    "SchoolId": 2,
+    "ClassId":  1
+  }
+]

@@ -1,18 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MySchool.Models.Entities
 {
-    public class Class
+    public class Class 
     {
-        public int ClassId { get; set; }
+        [Key]
+        public int Id { get; set; }
+
+        [StringLength(50, MinimumLength = 3)]
+        [Display(Name = "Class")]
         public string Name { get; set; }
-        public int Year { get; set; }
-        public int TeacherId { get; set; }
-        public Teacher Teacher { get; set; }
-        public List<Student> Students { get; set; } = new List<Student>();
+
+
+        //public virtual ICollection<TeacherClass> ClassTeachers { get; set; }
+
+        public virtual ICollection<Subject> Subjects { get; set; }
+
+        public virtual ICollection<Student> Students { get; set; }
     }
 }

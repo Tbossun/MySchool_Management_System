@@ -1,0 +1,20 @@
+[
+  {
+    "ID": 1,
+    "LastName": "Smith",
+    "FirstMidName": "John",
+    "Email": "john.smith@example.com",
+    "PhoneNumber": "1234567890",
+    "HireDate": "2020-01-01",
+    "SchoolId": 1
+  },
+  {
+    "ID": 2,
+    "LastName": "Johnson",
+    "FirstMidName": "Jane",
+    "Email": "jane.johnson@example.com",
+    "PhoneNumber": "9876543210",
+    "HireDate": "2021-02-01",
+    "SchoolId": 2
+  }
+]

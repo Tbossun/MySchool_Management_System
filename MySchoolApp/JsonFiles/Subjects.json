@@ -1,0 +1,26 @@
+[
+  {
+    "SubjectID": 1,
+    "Title": "Algebra",
+    "Description": "Introduction to Algebra",
+    "Credits": 3,
+    "ClassId": 1,
+    "TeacherId": 2
+  },
+  {
+    "SubjectID": 2,
+    "Title": "Biology",
+    "Description": "Introduction to Biology",
+    "Credits": 4,
+    "ClassId": 2,
+    "TeacherId": 2
+  },
+  {
+    "SubjectID": 3,
+    "Title": "Literature",
+    "Description": "Introduction to Literature",
+    "Credits": 3,
+    "ClassId": 3,
+    "TeacherId": 1
+  }
+]

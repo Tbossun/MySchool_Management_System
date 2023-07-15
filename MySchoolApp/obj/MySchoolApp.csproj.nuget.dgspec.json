@@ -4,6 +4,91 @@
     "C:\\Users\\alabi\\Desktop\\My_Personal_Projects\\MySchool\\MySchoolApp\\MySchoolApp.csproj": {}
   },
   "projects": {
+    "C:\\Users\\alabi\\Desktop\\My_Personal_Projects\\MySchool\\MySchool.Core\\MySchool.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\alabi\\Desktop\\My_Personal_Projects\\MySchool\\MySchool.Core\\MySchool.Core.csproj",
+        "projectName": "MySchool.Core",
+        "projectPath": "C:\\Users\\alabi\\Desktop\\My_Personal_Projects\\MySchool\\MySchool.Core\\MySchool.Core.csproj",
+        "packagesPath": "C:\\Users\\alabi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alabi\\Desktop\\My_Personal_Projects\\MySchool\\MySchool.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alabi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\alabi\\Desktop\\My_Personal_Projects\\MySchool\\MySchool.Data\\MySchool.Data.csproj": {
+                "projectPath": "C:\\Users\\alabi\\Desktop\\My_Personal_Projects\\MySchool\\MySchool.Data\\MySchool.Data.csproj"
+              },
+              "C:\\Users\\alabi\\Desktop\\My_Personal_Projects\\MySchool\\MySchool.Models\\MySchool.Models.csproj": {
+                "projectPath": "C:\\Users\\alabi\\Desktop\\My_Personal_Projects\\MySchool\\MySchool.Models\\MySchool.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.21.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETCore.MailKit": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\alabi\\Desktop\\My_Personal_Projects\\MySchool\\MySchool.Data\\MySchool.Data.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -49,6 +134,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.19, )"
@@ -56,6 +145,20 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.19, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.19, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.19, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -123,9 +226,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",
               "version": "[6.0.19, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             }
           },
           "imports": [
@@ -178,6 +289,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\alabi\\Desktop\\My_Personal_Projects\\MySchool\\MySchool.Core\\MySchool.Core.csproj": {
+                "projectPath": "C:\\Users\\alabi\\Desktop\\My_Personal_Projects\\MySchool\\MySchool.Core\\MySchool.Core.csproj"
+              },
               "C:\\Users\\alabi\\Desktop\\My_Personal_Projects\\MySchool\\MySchool.Data\\MySchool.Data.csproj": {
                 "projectPath": "C:\\Users\\alabi\\Desktop\\My_Personal_Projects\\MySchool\\MySchool.Data\\MySchool.Data.csproj"
               }
@@ -206,6 +320,10 @@
               "target": "Package",
               "version": "[1.21.0, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.19, )"
@@ -228,6 +346,10 @@
               "target": "Package",
               "version": "[6.0.19, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.19, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[6.0.19, )"
@@ -245,6 +367,10 @@
             "Microsoft.Extensions.Options": {
               "target": "Package",
               "version": "[8.0.0-preview.5.23280.8, )"
+            },
+            "NETCore.MailKit": {
+              "target": "Package",
+              "version": "[2.1.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
