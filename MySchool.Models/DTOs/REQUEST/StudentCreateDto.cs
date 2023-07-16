@@ -23,6 +23,8 @@ namespace MySchool.Models.DTOs.REQUEST
 
         public int SchoolId { get; set; }
 
+        public int ClassId { get; set; }
+
         public string UserId { get; set; }
     }
 }
