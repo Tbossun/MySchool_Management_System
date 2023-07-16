@@ -4,29 +4,29 @@
     "FirstMidName": "John",
     "LastName": "Doe",
     "DateOfBirth": "2000-01-01",
-    "Email": "john.doe@example.com",
+    "UserId": "48b34c6d-f84e-4649-8224-b01d9ded25b7",
     "EnrollmentDate": "2021-09-01",
     "SchoolId": 1,
-    "ClassId":  2
+    "ClassId": 2
   },
   {
     "ID": 2,
     "FirstMidName": "Jane",
     "LastName": "Smith",
     "DateOfBirth": "2001-02-02",
-    "Email": "jane.smith@example.com",
+    "UserId": "0d0ff1ed-0eda-4bbb-ac13-7a7313f52a3e",
     "EnrollmentDate": "2021-09-01",
     "SchoolId": 1,
-    "ClassId":  1
+    "ClassId": 1
   },
   {
     "ID": 3,
     "FirstMidName": "Bob",
     "LastName": "Johnson",
     "DateOfBirth": "2002-03-03",
-    "Email": "bob.johnson@example.com",
+    "UserId": "c71c9c18-9de0-472a-a31e-7c6c2874d5a4",
     "EnrollmentDate": "2021-09-01",
     "SchoolId": 2,
-    "ClassId":  1
+    "ClassId": 1
   }
 ]

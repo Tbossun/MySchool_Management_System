@@ -22,7 +22,7 @@ namespace MySchool.Data
             try
             {
                 await context.Database.EnsureCreatedAsync();
-                if (!context.Teachers.Any())
+                if (!context.Users.Any())
                 {
                     string roles = File.ReadAllText(@"JsonFiles/Roles.json");
                     List<IdentityRole> listOfRoles = JsonConvert.DeserializeObject<List<IdentityRole>>(roles);

@@ -12,17 +12,17 @@ namespace MySchoolApp.Profiles
         {
             CreateMap<RegRequestDTO, User>();
 
-            CreateMap<User, LoginResponseDTO>()
-                .ForMember(dest => dest.Name, option => option.MapFrom(src =>
-                            $"{src.FirstName} {src.LastName}"));
+            CreateMap<User, LoginResponseDTO>();
+            /*.ForMember(dest => dest.Name, option => option.MapFrom(src =>
+                        $"{src.FirstName} {src.LastName}"));*/
 
-            CreateMap<User, GetUserDTO>()
-                .ForMember(dest => dest.Name, option => option.MapFrom(src =>
+            CreateMap<User, GetUserDTO>();
+                /*.ForMember(dest => dest.Name, option => option.MapFrom(src =>
                             $"{src.FirstName} {src.LastName}"))
                 .ForMember(dest => dest.Address,
                             option => option.MapFrom(src => $"{src.StreetAddress}, {src.City}, {src.State}."))
                 .ForMember(dest => dest.DateOfBirth,
-                            option => option.MapFrom(src => src.DateOfBirth.ToShortDateString()));
+                            option => option.MapFrom(src => src.DateOfBirth.ToShortDateString()));*/
             CreateMap<Subject, SchoolCreateDto>().ReverseMap();
             CreateMap<Student, StudentCreateDto>().ReverseMap();
             CreateMap<Teacher, TeacherCreateDto>().ReverseMap();

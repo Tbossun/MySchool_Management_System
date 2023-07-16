@@ -87,7 +87,7 @@ namespace MySchoolApp.Controllers
         /// </summary>
         /// <param name="userActionParams"></param>
         /// <returns></returns>
-        [HttpGet("search")]
+       /* [HttpGet("search")]
         [Authorize(Roles = "Admin")]
         public IActionResult SearchUsers([FromQuery] UserActionParams userActionParams)
         {
@@ -97,7 +97,7 @@ namespace MySchoolApp.Controllers
                 return NotFound();
             }
             return Ok(_mapper.Map<IEnumerable<GetUserDTO>>(listOfUsers));
-        }
+        }*/
 
         /// <summary>
         /// Returns a user by using user Id

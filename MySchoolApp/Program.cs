@@ -114,6 +114,7 @@ public class Program
         builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
         builder.Services.AddScoped<IImageService, ImageService>();
         builder.Services.Configure<ImageUploadSettings>(builder.Configuration.GetSection("ImageUploadSettings"));
+        builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 
         /* builder.Services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();

@@ -23,10 +23,6 @@ namespace MySchool.Models.Entities
         [Column("FirstName"), Display(Name = "First Name"), StringLength(50, MinimumLength = 1)]
         public string FirstMidName { get; set; }
 
-        [Required]
-        [DataType(DataType.EmailAddress)]
-        public string Email { get; set; }
-
         [Display(Name = "Full Name")]
         public string FullName
         {
@@ -42,11 +38,14 @@ namespace MySchool.Models.Entities
         [Display(Name = "Hire Date")]
         public DateTime HireDate { get; set; }
 
-
-
         public int SchoolId { get; set; }
 
         public School School { get; set; }
+
+        [Required]
+        public string UserId { get; set; }
+
+        public virtual User User { get; set; }
 
 
         public virtual ICollection<Subject> SubjectList { get; set; }

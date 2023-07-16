@@ -27,9 +27,6 @@ namespace MySchool.Models.Entities
         [DataType(DataType.Date)]
         public DateTime DateOfBirth { get; set; }
 
-        [DataType(DataType.EmailAddress)]
-        public string Email { get; set; }
-
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [Display(Name = "Enrollment Date")]
@@ -50,5 +47,10 @@ namespace MySchool.Models.Entities
         public int ClassId { get; set; }
 
         public virtual Class Class { get; set; }
+
+        [Required]
+        public string UserId { get; set; }
+
+        public virtual User User { get; set; }
     }
 }

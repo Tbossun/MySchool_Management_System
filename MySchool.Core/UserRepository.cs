@@ -40,7 +40,7 @@ namespace MySchool.Core
         }
 
 
-        public IEnumerable<User> SearchUsers(UserActionParams userActionParams)
+        /*public IEnumerable<User> SearchUsers(UserActionParams userActionParams)
         {
             var collection = _userManager.Users;
 
@@ -54,13 +54,13 @@ namespace MySchool.Core
             if (!string.IsNullOrWhiteSpace(userActionParams.SearchWord))
             {
                 string searchWord = userActionParams.SearchWord;
-                collection = collection.Where(user => user.City.Contains(searchWord)
+                collection = collection.Where(user => user.UserName.Contains(searchWord)
                                             || user.FirstName.Contains(searchWord)
                                             || user.LastName.Contains(searchWord));
             }
             return collection.Skip(10 * (userActionParams.Page - 1))
                              .Take(10).ToList();
-        }
+        }*/
 
 
         public PagedList<User> GetAllUsers(int pageNo)
@@ -89,12 +89,12 @@ namespace MySchool.Core
             User user = await _userManager.FindByIdAsync(id);
             if (user != null)
             {
-                user.FirstName = string.IsNullOrWhiteSpace(updateUser.FirstName) ? user.FirstName : updateUser.FirstName;
-                user.LastName = string.IsNullOrWhiteSpace(updateUser.LastName) ? user.LastName : updateUser.LastName;
+               // user.FirstName = string.IsNullOrWhiteSpace(updateUser.FirstName) ? user.FirstName : updateUser.FirstName;
+              //  user.LastName = string.IsNullOrWhiteSpace(updateUser.LastName) ? user.LastName : updateUser.LastName;
                 user.PhoneNumber = string.IsNullOrWhiteSpace(updateUser.PhoneNumber) ? user.PhoneNumber : updateUser.PhoneNumber;
-                user.StreetAddress = string.IsNullOrWhiteSpace(updateUser.StreetAddress) ? user.StreetAddress : updateUser.StreetAddress;
-                user.City = string.IsNullOrWhiteSpace(updateUser.City) ? user.City : updateUser.City;
-                user.State = string.IsNullOrWhiteSpace(updateUser.State) ? user.State : updateUser.State;
+               // user.StreetAddress = string.IsNullOrWhiteSpace(updateUser.StreetAddress) ? user.StreetAddress : updateUser.StreetAddress;
+               // user.City = string.IsNullOrWhiteSpace(updateUser.City) ? user.City : updateUser.City;
+              //  user.State = string.IsNullOrWhiteSpace(updateUser.State) ? user.State : updateUser.State;
                 user.Email = string.IsNullOrWhiteSpace(updateUser.Email) ? user.Email : updateUser.Email;
                 user.Password = string.IsNullOrWhiteSpace(updateUser.Password) ? user.Password : updateUser.Password;
                 user.UserName = string.IsNullOrWhiteSpace(updateUser.UserName) ? user.UserName : updateUser.UserName;

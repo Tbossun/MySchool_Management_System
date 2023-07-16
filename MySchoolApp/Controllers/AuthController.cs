@@ -38,8 +38,8 @@ namespace MySchoolApp.Controllers
             _signInManager = signInManager;
         }
 
-        [HttpPost("Register")]
-        public async Task<IActionResult> Register([FromBody] RegRequestDTO regRequest, string role)
+        /*[HttpPost("Register")]
+        public async Task<IActionResult> Register([FromBody] RegRequestDTO regRequest, string role, bool enableTwoFactorAuthentication = false)
         {
             //check if user exist
             var userExist = await _userManager.FindByEmailAsync(regRequest.Email);
@@ -74,7 +74,53 @@ namespace MySchoolApp.Controllers
             return StatusCode(StatusCodes.Status500InternalServerError,
                        new AuthResponse { StatusCode = "Error", IsSuccess = false, Message = "This role doesn't exist!" });
 
+        }*/
+        [HttpPost("Register")]
+        public async Task<IActionResult> Register([FromBody] RegRequestDTO regRequest, string role, bool enableTwoFactorAuthentication = false)
+        {
+            // Check if user exists
+            var userExist = await _userManager.FindByEmailAsync(regRequest.Email);
+            if (userExist != null)
+            {
+                return StatusCode(StatusCodes.Status403Forbidden,
+                    new AuthResponse { StatusCode = "Error", IsSuccess = false, Message = "User already exists!" });
+            }
+
+            // Add the user to the database
+            User user = _mapper.Map<User>(regRequest);
+            user.UserName = string.IsNullOrWhiteSpace(user.UserName) ? user.Email : user.UserName;
+
+            if (await _roleManager.RoleExistsAsync(role))
+            {
+                var result = await _userManager.CreateAsync(user, regRequest.Password);
+
+                if (!result.Succeeded)
+                {
+                    return StatusCode(StatusCodes.Status500InternalServerError,
+                        new AuthResponse { StatusCode = "Error", IsSuccess = false, Message = "Failed to create user!" });
+                }
+
+                await _userManager.AddToRoleAsync(user, role);
+
+                // Enable or disable two-factor authentication based on the parameter
+                if (enableTwoFactorAuthentication)
+                {
+                    await _userManager.SetTwoFactorEnabledAsync(user, true);
+                }
+
+                var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                var confirmationLink = Url.Action(nameof(ConfirmEmail), "Auth", new { token, email = user.Email }, Request.Scheme);
+                var message = new Message(new string[] { user.Email! }, "Confirmation Email Link", $"Click on the link to confirm your email: {confirmationLink!}");
+                _emailService.SendEmail(message);
+
+                return StatusCode(StatusCodes.Status200OK,
+                    new AuthResponse { StatusCode = "Success", IsSuccess = true, Message = $"User created successfully. Check your email {user.Email} for a confirmation link!" });
+            }
+
+            return StatusCode(StatusCodes.Status500InternalServerError,
+                new AuthResponse { StatusCode = "Error", IsSuccess = false, Message = "This role doesn't exist!" });
         }
+
 
         [HttpGet("ConfirmEmail")]
         public async Task<IActionResult> ConfirmEmail(string token, string email)

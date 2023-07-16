@@ -3,7 +3,7 @@
     "ID": 1,
     "LastName": "Smith",
     "FirstMidName": "John",
-    "Email": "john.smith@example.com",
+    "UserId": "bd83284e-e490-4f22-8199-5322b4e51f2e",
     "PhoneNumber": "1234567890",
     "HireDate": "2020-01-01",
     "SchoolId": 1
@@ -14,6 +14,7 @@
     "FirstMidName": "Jane",
     "Email": "jane.johnson@example.com",
     "PhoneNumber": "9876543210",
+    "UserId": "f51332ff-0348-4216-b90b-e96c45bf98eb",
     "HireDate": "2021-02-01",
     "SchoolId": 2
   }

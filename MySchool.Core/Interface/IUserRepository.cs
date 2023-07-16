@@ -12,7 +12,7 @@ namespace MySchool.Core.Interface
         Task<bool> DeleteUser(string userId);
         Task<User> GetUserById(string userId);
         Task<User> GetUserByEmail(string email);
-        IEnumerable<User> SearchUsers(UserActionParams userActionParams);
+       /* IEnumerable<User> SearchUsers(UserActionParams userActionParams);*/
         Task<bool> UpdateUser(UpdateRequestDTO updateUser, string id);
         Task<bool> UpdateAvatarUrl(string Url, string Id);
     }

@@ -32,7 +32,7 @@ namespace MySchool.Models.DTOs.REQUEST
         [Display(Name = "Hire Date")]
         public DateTime HireDate { get; set; }
 
-
+        public string UserId { get; set; }
 
         public int SchoolId { get; set; }
     }

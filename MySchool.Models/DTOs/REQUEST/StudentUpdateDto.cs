@@ -14,12 +14,14 @@ namespace MySchool.Models.DTOs.REQUEST
         [DataType(DataType.Date)]
         public DateTime DateOfBirth { get; set; }
 
-        [DataType(DataType.EmailAddress)]
-        public string Email { get; set; }
+        /*[DataType(DataType.EmailAddress)]
+        public string Email { get; set; }*/
 
         [DataType(DataType.Date)]
         public DateTime EnrollmentDate { get; set; }
 
         public int SchoolId { get; set; }
+
+        public string UserId { get; set; }
     }
 }

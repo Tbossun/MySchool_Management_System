@@ -19,9 +19,9 @@ namespace MySchool.Models.DTOs.REQUEST
         [Column("FirstName"), Display(Name = "First Name"), StringLength(50, MinimumLength = 1)]
         public string FirstMidName { get; set; }
 
-        [Required]
+        /*[Required]
         [DataType(DataType.EmailAddress)]
-        public string Email { get; set; }
+        public string Email { get; set; }*/
 
         [Required]
         [DataType(DataType.PhoneNumber)]
@@ -33,5 +33,7 @@ namespace MySchool.Models.DTOs.REQUEST
         public DateTime HireDate { get; set; }
 
         public int SchoolId { get; set; }
+
+        public string UserId { get; set; }
     }
 }

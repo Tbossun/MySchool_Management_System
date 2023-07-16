@@ -7,7 +7,7 @@ namespace MySchool.Models.DTOs.REQUEST
 {
     public class RegRequestDTO
     {
-        [Required]
+        /*[Required]
         [DataType(DataType.Text)]
         [StringLength(50, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 3)]
         [RegularExpression(@"^[A-Z]{1}[a-z]{2,}$",
@@ -36,7 +36,7 @@ namespace MySchool.Models.DTOs.REQUEST
 
         [Required]
         [StringLength(50, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 3)]
-        public string State { get; set; }
+        public string State { get; set; }*/
 
         [Required]
         public string Phonenumber { get; set; }
@@ -50,8 +50,8 @@ namespace MySchool.Models.DTOs.REQUEST
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Required]
-        public DateTime DateOfBirth { get; set; }
+        /*[Required]
+        public DateTime DateOfBirth { get; set; }*/
 
        /* public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
