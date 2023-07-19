@@ -1,23 +1,17 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
-using Microsoft.AspNetCore.Mvc.Routing;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using MySchool.Core;
 using MySchool.Core.Interface;
 using MySchool.Data;
 using MySchool.Models.Entities;
 using MySchoolApp.Extensions;
 using Serilog;
 using Serilog.Extensions.Logging;
-using System;
 using System.Text;
-using Microsoft.Extensions.Configuration;
 using MySchool.Core.Utils;
+using MySchool.Core;
 
 public class Program
 {
@@ -33,6 +27,17 @@ public class Program
 
         builder.Host.UseSerilog();
         builder.Services.AddControllers();
+
+        //add cors
+        builder.Services.AddCors(options => {
+            options.AddDefaultPolicy(builder =>
+            {
+                builder.AllowAnyMethod();
+                builder.AllowAnyOrigin();
+                builder.AllowAnyMethod();
+            });
+
+        });
 
         //Configure swagger to use authentication
         builder.Services.AddSwaggerGen(setup =>
@@ -116,7 +121,11 @@ public class Program
         builder.Services.Configure<ImageUploadSettings>(builder.Configuration.GetSection("ImageUploadSettings"));
         builder.Services.AddScoped<IUserRepository, UserRepository>();
 
-
+        builder.Services.AddAuthentication().AddGoogle(options =>
+        {
+            options.ClientId = "1000633439096-5c12vd9eqgumt561u8s72fijgs0bjkvb.apps.googleusercontent.com";
+            options.ClientSecret = "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";
+        });
         /* builder.Services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
          builder.Services.AddScoped<IUrlHelper>(x =>
          {
@@ -151,11 +160,10 @@ public class Program
             Seeder.SeedDataBase(roleManager, userManager, dbContext);
         }
 
-        if (app.Environment.IsDevelopment())
-        {
+        
             app.UseSwagger();
             app.UseSwaggerUI();
-        }
+        
 
         app.ConfigureExceptionHandler(logger);
         app.UseHttpsRedirection();

@@ -1,0 +1,17 @@
+[
+  {
+    "Id": 1,
+    "Content": "What is the equation of a straight line?",
+    "ExaminationId": 1
+  },
+  {
+    "Id": 2,
+    "Content": "What is the basic unit of life?",
+    "ExaminationId":  1
+  },
+  {
+    "Id": 3,
+    "Content": "What is a metaphor?",
+    "ExaminationId": 3
+  }
+]

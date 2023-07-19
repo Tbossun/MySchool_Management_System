@@ -32,5 +32,7 @@ namespace MySchool.Models.Entities
 
         public virtual ICollection<Topic> Topics { get; set; }
 
+        public  Examination Examination { get; set; }
+
     }
 }

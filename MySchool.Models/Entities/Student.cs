@@ -52,5 +52,7 @@ namespace MySchool.Models.Entities
         public string UserId { get; set; }
 
         public virtual User User { get; set; }
+
+        public virtual ICollection<Examination> Exams { get; set; }
     }
 }

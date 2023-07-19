@@ -161,6 +161,78 @@ namespace MySchool.Data.Migrations
                     b.ToTable("Classes");
                 });
 
+            modelBuilder.Entity("MySchool.Models.Entities.Examination", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<double>("ExamScore")
+                        .HasColumnType("REAL");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("studentId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("subjectId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("studentId");
+
+                    b.HasIndex("subjectId")
+                        .IsUnique();
+
+                    b.ToTable("Examinations");
+                });
+
+            modelBuilder.Entity("MySchool.Models.Entities.Question", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ExaminationId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ExaminationId");
+
+                    b.ToTable("Questions");
+                });
+
+            modelBuilder.Entity("MySchool.Models.Entities.QuestionOption", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsCorrect")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("OptionText")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("QuestionId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("QuestionId");
+
+                    b.ToTable("QuestionOptions");
+                });
+
             modelBuilder.Entity("MySchool.Models.Entities.School", b =>
                 {
                     b.Property<int>("Id")
@@ -315,6 +387,9 @@ namespace MySchool.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<double>("AssignmentScore")
+                        .HasColumnType("REAL");
+
                     b.Property<string>("Notes")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -462,6 +537,47 @@ namespace MySchool.Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("MySchool.Models.Entities.Examination", b =>
+                {
+                    b.HasOne("MySchool.Models.Entities.Student", "Student")
+                        .WithMany("Exams")
+                        .HasForeignKey("studentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MySchool.Models.Entities.Subject", "Subject")
+                        .WithOne("Examination")
+                        .HasForeignKey("MySchool.Models.Entities.Examination", "subjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Student");
+
+                    b.Navigation("Subject");
+                });
+
+            modelBuilder.Entity("MySchool.Models.Entities.Question", b =>
+                {
+                    b.HasOne("MySchool.Models.Entities.Examination", "Examination")
+                        .WithMany("Questions")
+                        .HasForeignKey("ExaminationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Examination");
+                });
+
+            modelBuilder.Entity("MySchool.Models.Entities.QuestionOption", b =>
+                {
+                    b.HasOne("MySchool.Models.Entities.Question", "Question")
+                        .WithMany("Options")
+                        .HasForeignKey("QuestionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Question");
+                });
+
             modelBuilder.Entity("MySchool.Models.Entities.Student", b =>
                 {
                     b.HasOne("MySchool.Models.Entities.Class", "Class")
@@ -545,6 +661,16 @@ namespace MySchool.Data.Migrations
                     b.Navigation("Subjects");
                 });
 
+            modelBuilder.Entity("MySchool.Models.Entities.Examination", b =>
+                {
+                    b.Navigation("Questions");
+                });
+
+            modelBuilder.Entity("MySchool.Models.Entities.Question", b =>
+                {
+                    b.Navigation("Options");
+                });
+
             modelBuilder.Entity("MySchool.Models.Entities.School", b =>
                 {
                     b.Navigation("Students");
@@ -552,8 +678,16 @@ namespace MySchool.Data.Migrations
                     b.Navigation("Teachers");
                 });
 
+            modelBuilder.Entity("MySchool.Models.Entities.Student", b =>
+                {
+                    b.Navigation("Exams");
+                });
+
             modelBuilder.Entity("MySchool.Models.Entities.Subject", b =>
                 {
+                    b.Navigation("Examination")
+                        .IsRequired();
+
                     b.Navigation("Topics");
                 });
 

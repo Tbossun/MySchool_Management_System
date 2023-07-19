@@ -4,7 +4,6 @@ using MySchool.Core.Interface;
 using MySchool.Models.Entities;
 using MailKit.Net.Smtp;
 
-
 namespace MySchool.Core
 {
     public class EmailService : IEmailService

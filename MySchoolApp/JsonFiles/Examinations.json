@@ -1,0 +1,23 @@
+[
+  {
+    "Id": 1,
+    "Name": "Algebra Exam",
+    "ExamScore": 85.0,
+    "SubjectId": 1,
+    "studentId": 1
+  },
+  {
+    "Id": 2,
+    "Name": "Biology Exam",
+    "ExamScore": 92.5,
+    "SubjectId": 2,
+    "studentId": 1
+  },
+  {
+    "Id": 3,
+    "Name": "Literature Exam",
+    "ExamScore": 78.0,
+    "SubjectId": 3,
+    "studentId": 1
+  }
+]

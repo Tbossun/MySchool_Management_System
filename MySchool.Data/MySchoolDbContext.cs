@@ -17,6 +17,9 @@ namespace MySchool.Data
         public DbSet<Class> Classes { get; set; }
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<Topic> Topics { get; set; }
+        public DbSet<Examination> Examinations { get; set; }
+        public DbSet<Question> Questions { get; set; }
+        public DbSet<QuestionOption> QuestionOptions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

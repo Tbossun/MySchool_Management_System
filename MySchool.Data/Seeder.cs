@@ -107,6 +107,35 @@ namespace MySchool.Data
                         // topic.SubjectId = listOfSubjects.Single(s => s.Title == topic.Subject.Title).SubjectID;
                         await context.Topics.AddAsync(topic); ;
                     }
+
+                     //Create Exams
+                    string examinations = File.ReadAllText(@"JsonFiles/Examinations.json");
+                    List<Examination> listOfExaminations = JsonConvert.DeserializeObject<List<Examination>>(examinations);
+
+                    foreach (var exam in listOfExaminations)
+                    {
+                        await context.Examinations.AddAsync(exam);
+                    }
+
+                     //Add questions
+                    string questions = File.ReadAllText(@"JsonFiles/Questions.json");
+                    List<Question> listOfQuestions = JsonConvert.DeserializeObject<List<Question>>(questions);
+
+                    foreach (var question in listOfQuestions)
+                    {
+                        await context.Questions.AddAsync(question);
+                    }
+
+                    //Add Question Options
+                    string questionOptions = File.ReadAllText(@"JsonFiles/QuestionOptions.json");
+                    List<QuestionOption> listOfQuestionOptions = JsonConvert.DeserializeObject<List<QuestionOption>>(questionOptions);
+
+                    foreach (var option in listOfQuestionOptions)
+                    {
+                        /*var questionId = listOfQuestions.Single(q => q.Content == option.Question.Content).Id;
+                        option.QuestionId = questionId;*/
+                        await context.QuestionOptions.AddAsync(option);
+                    }
                 }
                 await context.SaveChangesAsync();
             }

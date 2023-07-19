@@ -3,18 +3,21 @@
     "Id": 1,
     "TopicName": "Linear Equations",
     "Notes": "Introduction to linear equations",
-    "SubjectId": 1
+    "SubjectId": 1,
+    "AssignmentScore": 12.0
   },
   {
     "Id": 2,
     "TopicName": "Cell Structure",
     "Notes": "Introduction to cell structure",
-    "SubjectId": 2
+    "SubjectId": 2,
+    "AssignmentScore": 25.0
   },
   {
     "Id": 3,
     "TopicName": "Poetry Analysis",
     "Notes": "Introduction to poetry analysis",
-    "SubjectId": 3
+    "SubjectId": 3,
+    "AssignmentScore": 27.0
   }
 ]

@@ -17,9 +17,9 @@ namespace MySchool.Models.Entities
         public string TopicName { get; set; }
         public string Notes { get; set; }
 
-
-
         public int SubjectId { get; set; }
         public Subject Subject { get; set; }
+
+        public double AssignmentScore { get; set; }
     }   
 }

@@ -12,6 +12,9 @@ namespace MySchool.Core.Interface
         IClassRepository ClassRepository { get; }
         ISubjectRepository SubjectRepository { get; }
         ITopicRepository TopicRepository { get; }
+        IQuestionRepository QuestionRepository { get; }
+        IQuestionOptionRepository QuestionOptionRepository { get; }
+        IExaminationRepository ExaminationRepository { get; }
 
         void Save();
     }

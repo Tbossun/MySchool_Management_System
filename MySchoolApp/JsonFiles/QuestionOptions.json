@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 1,
+    "OptionText": "y = mx + b",
+    "IsCorrect": true,
+    "QuestionId": 1
+  },
+  {
+    "Id": 2,
+    "OptionText": "y = ax^2 + bx + c",
+    "IsCorrect": false,
+    "QuestionId": 1
+  },
+  {
+    "Id": 3,
+    "OptionText": "Prokaryotic cell",
+    "IsCorrect": true,
+    "QuestionId": 2
+  },
+  {
+    "Id": 4,
+    "OptionText": "Eukaryotic cell",
+    "IsCorrect": false,
+    "QuestionId": 2
+  },
+  {
+    "Id": 5,
+    "OptionText": "Figure of speech",
+    "IsCorrect": true,
+    "QuestionId": 3
+  },
+  {
+    "Id": 6,
+    "OptionText": "Type of poem",
+    "IsCorrect": false,
+    "QuestionId": 3
+  }
+]

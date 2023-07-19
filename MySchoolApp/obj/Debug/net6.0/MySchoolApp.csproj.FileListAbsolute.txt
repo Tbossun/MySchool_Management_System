@@ -146,3 +146,7 @@ C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchoolApp\bin\Debug\net6.
 C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchoolApp\bin\Debug\net6.0\JsonFiles\TeacherClasses.json
 C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchoolApp\bin\Debug\net6.0\JsonFiles\Teachers.json
 C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchoolApp\bin\Debug\net6.0\JsonFiles\Topics.json
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchoolApp\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchoolApp\bin\Debug\net6.0\JsonFiles\Examinations.json
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchoolApp\bin\Debug\net6.0\JsonFiles\QuestionOptions.json
+C:\Users\alabi\Desktop\My_Personal_Projects\MySchool\MySchoolApp\bin\Debug\net6.0\JsonFiles\Questions.json
